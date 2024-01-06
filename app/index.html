@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WebSocket Client</title>
+</head>
+<body>
+    <div hx-ws="connect:ws://localhost:8080/ws">
+        <div id="chat_room">
+            ...
+        </div>
+        <form hx-ws="send:submit">
+            <input name="chat_message">
+        </form>
+    </div>
+    <script src="https://unpkg.com/htmx.org@1.9.10" integrity="sha384-D1Kt99CQMDuVetoL1lrYwg5t+9QdHe7NLX/SoJYkXDFfX37iInKRy5xLSi8nO7UC" crossorigin="anonymous"></script>
+</body>
+</html>
